@@ -1,0 +1,52 @@
+$colors: (
+  "primary": #E6D4B3,
+  "focus": #226764,
+  "white": #fff,
+  "dark": #333
+);
+$distances: (
+  "sm": 0.5rem,
+  "md": 1rem,
+  "lg": 2rem
+);
+$position: (
+  "left": left,
+  "center": center,
+  "right": right
+);
+$opacity: (
+  "01": 0.1,
+  "02": 0.2,
+  "03": 0.3,
+  "04": 0.4,
+  "05": 0.5,
+  "06": 0.6,
+  "07": 0.7,
+  "08": 0.8,
+  "09": 0.9
+);
+$border-width: (
+  "1": 1px,
+  "2": 2px,
+  "3": 3px,
+  "4": 4px
+);
+$border-round: (
+  "2": 2px,
+  "4": 4px,
+  "6": 6px,
+  "8": 8px,
+  "10": 10px,
+  "12": 12px,
+  "15": 15px,
+  "20": 20px
+);
+// font-sizes
+$fs-xlg: 2rem;
+$fs-lg: 1.5rem;
+$fs-md: 1.1rem;
+
+// screen sizes
+$lg-size: 1100px;
+$md-size: 900px;
+$sm-size: 500px;

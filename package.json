@@ -1,0 +1,19 @@
+{
+  "name": "css_framework",
+  "version": "1.0.0",
+  "description": "A utility css framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "utility-first",
+    "framework",
+    "css",
+    "framework"
+  ],
+  "author": "Javier Trujillo",
+  "license": "ISC"
+}

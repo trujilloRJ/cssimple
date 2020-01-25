@@ -1,0 +1,125 @@
+$columns: 12;
+//Index
+//  Color
+//  Padding
+//  Margin
+//  Align
+//  Border
+//  Rounded
+//  Flex-grid
+
+//Color
+@each $name, $code in $colors {
+  .txt-#{$name} {
+    color: $code;
+  }
+  .bg-#{$name} {
+    background-color: $code;
+  }
+  @each $name2, $code2 in $opacity {
+    .txt-#{$name}-#{$name2} {
+      color: rgba($code, $code2);
+    }
+  }
+  @each $name2, $code2 in $opacity {
+    .bg-#{$name}-#{$name2} {
+      background-color: rgba($code, $code2);
+    }
+  }
+}
+
+//Padding
+@each $name, $code in $distances {
+  @each $name2, $code2 in $distances {
+    .p_#{$name}_#{$name2} {
+      padding: $code $code2;
+    }
+  }
+  .pt_#{$name} {
+    padding-top: $code;
+  }
+  .pl_#{$name} {
+    padding-left: $code;
+  }
+  .pr_#{$name} {
+    padding-right: $code;
+  }
+  .pb_#{$name} {
+    padding-bottom: $code;
+  }
+}
+
+//Margin
+@each $name, $code in $distances {
+  @each $name2, $code2 in $distances {
+    .m_#{$name}_#{$name2} {
+      padding: $code $code2;
+    }
+  }
+  .mt_#{$name} {
+    padding-top: $code;
+  }
+  .ml_#{$name} {
+    padding-left: $code;
+  }
+  .mr_#{$name} {
+    padding-right: $code;
+  }
+  .mb_#{$name} {
+    padding-bottom: $code;
+  }
+}
+
+//Align
+@each $name, $code in $position {
+  .txt-#{$name} {
+    text-align: $code;
+  }
+}
+
+//Border
+@each $name, $code in $border-width {
+  @each $name2, $code2 in $colors {
+    .b#{$name}-#{$name2} {
+      border: $code $code2 solid;
+    }
+  }
+}
+
+//Rounded
+@each $name, $code in $border-round {
+  .round#{$name} {
+    border-radius: $code;
+  }
+}
+
+//Flex-grid
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  &.j-center {
+    justify-content: center;
+  }
+  &.j-right {
+    justify-content: flex-end;
+  }
+}
+@for $i from 1 through $columns {
+  .c#{$i} {
+    flex: 0 0 100% / $columns * $i;
+  }
+  .c-off#{$i} {
+    margin-left: 100% / $columns * $i;
+  }
+}
+
+@media (max-width: $sm-size) {
+  @for $i from 1 through $columns {
+    .c#{$i} {
+      flex: 0 0 100%;
+    }
+    .c-off#{$i} {
+      margin-left: 0;
+    }
+  }
+}
