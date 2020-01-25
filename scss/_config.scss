@@ -1,6 +1,9 @@
 $colors: (
-  "primary": #E6D4B3,
-  "focus": #226764,
+  "primary": #247ba0,
+  "focus": #70c1b3,
+  "light": #b2dbbf,
+  "strong": #ff1654,
+  "palid": #f3ffbd,
   "white": #fff,
   "dark": #333
 );
@@ -42,9 +45,12 @@ $border-round: (
   "20": 20px
 );
 // font-sizes
-$fs-xlg: 2rem;
-$fs-lg: 1.5rem;
-$fs-md: 1.1rem;
+$font-sizes: (
+  "xlg": 2.5rem,
+  "lg": 1.8rem,
+  "md": 1.2rem,
+  "sm": 0.8rem
+);
 
 // screen sizes
 $lg-size: 1100px;

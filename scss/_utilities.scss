@@ -6,6 +6,7 @@ $columns: 12;
 //  Align
 //  Border
 //  Rounded
+//  Text-size
 //  Flex-grid
 
 //Color
@@ -31,20 +32,20 @@ $columns: 12;
 //Padding
 @each $name, $code in $distances {
   @each $name2, $code2 in $distances {
-    .p_#{$name}_#{$name2} {
+    .p-#{$name}-#{$name2} {
       padding: $code $code2;
     }
   }
-  .pt_#{$name} {
+  .pt-#{$name} {
     padding-top: $code;
   }
-  .pl_#{$name} {
+  .pl-#{$name} {
     padding-left: $code;
   }
-  .pr_#{$name} {
+  .pr-#{$name} {
     padding-right: $code;
   }
-  .pb_#{$name} {
+  .pb-#{$name} {
     padding-bottom: $code;
   }
 }
@@ -52,21 +53,21 @@ $columns: 12;
 //Margin
 @each $name, $code in $distances {
   @each $name2, $code2 in $distances {
-    .m_#{$name}_#{$name2} {
-      padding: $code $code2;
+    .m-#{$name}-#{$name2} {
+      margin: $code $code2;
     }
   }
-  .mt_#{$name} {
-    padding-top: $code;
+  .mt-#{$name} {
+    margin-top: $code;
   }
-  .ml_#{$name} {
-    padding-left: $code;
+  .ml-#{$name} {
+    margin-left: $code;
   }
-  .mr_#{$name} {
-    padding-right: $code;
+  .mr-#{$name} {
+    margin-right: $code;
   }
-  .mb_#{$name} {
-    padding-bottom: $code;
+  .mb-#{$name} {
+    margin-bottom: $code;
   }
 }
 
@@ -90,6 +91,13 @@ $columns: 12;
 @each $name, $code in $border-round {
   .round#{$name} {
     border-radius: $code;
+  }
+}
+
+//Text-size
+@each $name, $code in $font-sizes {
+  .fs-#{$name} {
+    font-size: $code;
   }
 }
 
