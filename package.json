@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "A utility css framework",
   "main": "index.js",
+  "homepage": "https://trujillorj.github.io/css_framework",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "css",
